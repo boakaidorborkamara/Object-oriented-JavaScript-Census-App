@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Census2008</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- custom font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <!--usage of chartjs-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <!-- logo -->
+                <div id="logo">
+                    <h1>census2008</h1>
+                </div>
+                
+                <!-- navagation links -->
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#dowload-btn">Download</a></li>
+                    </ul>
+            
+            </nav>
+        </header>
+
+        <main>
+            <!-- section containing full pupulations -->
+            <section id="full-population-totals">
+                <!-- this section is about the full population of the entire country including male n female? -->
+                <div class="first-section-totals">
+                    <div class="icon-box">
+                        <img src="./icons/all-population.png" alt="all population" class="icon">
+                    </div>
+                    <div>
+                        <p class="population-caption">TOTAL POPULATION</p>
+                        <p class="amount" id="total-population">0,000,000</p>
+                    </div>
+                </div>
+
+                <div class="first-section-totals">
+                    <div class="icon-box">
+                        <img src="./icons/twotone_female_white_48dp.png" alt="" class="icon">
+                    </div>
+                    <div>
+                        <p class="population-caption">FEMALE</p>
+                        <p class="amount" id="total-female">1,300,000</p>
+                    </div>
+                </div>
+
+                <div class="first-section-totals">
+                    <div class="icon-box">
+                        <img src="./icons/twotone_male_white_48dp.png" alt="female" class="icon">
+                    </div>
+                    <div>
+                        <p class="population-caption">MALE</p>
+                        <p class="amount" id="total-male">1,300,000</p>
+                    </div>
+                </div>
+            </section>
+            <section id="county-population-chart-section">
+                <div class="bar-char">
+                    <!-- <p>bar chart</p> -->
+                    <canvas id="all-counties-bar-chart" width="100%""></canvas>
+                </div>
+                <div class="pie-chart">
+                    <!-- <p>pie chart</p> -->
+                    <canvas id="dognut-chart" width="100%"></canvas>
+                </div>
+
+            </section>
+            <section id="district-population-chart-section">
+                <div id="district-chart-header">
+                    <div class="district-population-label">
+                        <p>Distribution of Population by District</p>
+                    </div>
+                
+                    <div>
+                        <select name="" id="county-select-dropdown">
+                            <!-- <option value="">Montserrado</option> -->
+                        </select>
+                    </div>
+                </div>
+                <div id="district-chart-area">
+                    <!-- <p>District Chart Area</p> -->
+                    <canvas id="distract-chart" width="90%" height=" 25%"></canvas>
+                </div>
+
+            </section>
+            <section id="download-section">
+                <p>Download 2008 Cencus Data</p>
+                <div id="dowload-btn">
+                    <div id="download-icon">
+                        <img src="./icons/baseline_download_white_48dp.png" alt="download icon">
+                    </div>
+                    <h3>DOWNLOAD</h3>
+                </div>
+            </section>
+            <section id="household-population">
+                <div id="number-of-household">
+                    <div id="household-header">
+                        <p>Distribution of Population by Number of Households</p>
+                        <div>
+                            <select name="" id="house-hold-dropdown">
+                                <!-- <option value="">Montserrado</option> -->
+                            </select>
+                        </div>
+                    </div>
+                    <div id="household-population-chart-area">
+                        <canvas id="household-population-chart" width="80%" height="30%"></canvas>
+                    </div>
+                    
+                </div>
+                <div id="male-n-female-amount">
+                    <p>Counties with most males & Females</p>
+                    <table>
+                        <thead>
+                            <th></th>
+                            <th>F</th>
+                            <th>M</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                
+                            </tr>
+                            <tr>
+                                <td>Bong</td>
+                                <td>3,882</td>
+                                <td>4,000</td>
+                            </tr>
+                            <tr>
+                                <td>Bong</td>
+                                <td>3,882</td>
+                                <td>4,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script type="text/javascript" src="./script/census.js"></script>
+    <script type="text/javascript" src="./script/script.js"></script>
+    
+</body>
+</html>

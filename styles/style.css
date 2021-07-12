@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+body{
+    font-family: 'Source Code Pro' ,'Courier New', Courier, monospace;
+    background-color: rgb(5, 5, 80);
+    font-size: 1.2em;
+}
+
+
+/* styling of wrapper  */
+#container{
+    width: 100%;
+    padding: 20px 70px 20px 70px;
+}
+
+
+/* header styling starts  */
+header{
+    height: 20%;
+    margin-bottom: 17px;
+}
+
+#logo{
+    width: 70%;
+    color: white;
+    font-size: 1.2em;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin-left: 20px;
+    text-transform: uppercase;
+    /* color: #519872; */
+}
+
+a{
+    text-decoration: none;
+    color: #519872;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+/* male, female and total population section styling starts  */
+.icon-box{
+    background-color: rgb(5, 5, 80);
+    width: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.icon{
+    width: 100%;
+}
+
+#full-population-totals{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.first-section-totals{
+    background-color: white;
+    border-radius: 2%;
+    box-shadow: 2px 1px 3px rgb(76, 75, 75);
+    display: flex;
+    padding: 20px 0px 20px 0px;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
+
+.first-section-totals div{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+}
+
+.first-section-totals div p{
+    margin:0px;
+}
+
+.population-caption{
+    font-size: small;
+    color: #828282;
+}
+
+.amount{
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+
+/* styling of main section starts  */
+main{
+    width: 100%;
+}
+
+
+/* county-population-chart-section styling starts */
+#county-population-chart-section{
+    height: 40vh;
+    display: grid;
+    grid-gap: 13px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 190px;
+}
+
+.bar-char{
+    background-color:white;
+    grid-column-start: span 2;
+    border-radius: 5px;
+    box-shadow: 2px 1px 3px rgb(76, 75, 75);
+    padding: 20px;
+}
+
+.pie-chart{
+    background-color: rgb(5, 5, 80);
+    border-radius: 5px;
+    /* box-shadow: 2px 1px 3px rgb(255, 255, 255); */
+    padding: 20px;
+    border: 1px solid white;
+}
+
+/* district-population-chart-section styling starts */
+#district-population-chart-section{
+    height: 80%;
+    background-color: white;
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    box-shadow: 1px 2px 5px rgb(136, 133, 133);
+    border-radius: 5px;
+    margin-top: 100px;
+    /* padding-bottom: 100px; */
+}
+
+#district-chart-header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding:20px;
+}
+
+
+
+#district-chart-header div{
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items:center;
+    padding-left: 20px;
+    
+}
+
+#district-chart-header select{
+    width: 100%;
+    margin-right: 20px;
+    height: 50%;
+    background-color: #F0F2EF;
+    border: 1px solid #828282;
+}
+
+#district-chart-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 20px 90px 20px;
+    margin-top: 20px;
+}
+
+
+/* download-section styling starts */
+#download-section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 0px 20px 0px 20px;
+    /* box-shadow: 1px 2px 5px rgb(136, 133, 133); */
+}
+
+#download-section p{
+    color: rgb(5, 5, 80);
+}
+
+
+#download-section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#download-section #dowload-btn{
+    background-color: white;
+    padding: 5px;
+    height: 60%;
+    width: 80%;
+    border-radius: 5px;
+}
+
+#download-section #dowload-btn:hover{
+    cursor: pointer;
+}
+
+
+#download-icon{
+    background-color: rgb(5, 5, 80) ;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#download-icon img{
+    width: 100%;
+}
+
+ h3{
+    color: rgb(5, 5, 80) ;
+}
+
+/* dohousehold-population styling starts */
+#household-population{
+    height: 60%;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+}
+
+#number-of-household{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgb(136, 133, 133);
+}
+
+
+#household-header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    /* background-color: sandybrown; */
+}
+
+#household-header select{
+    width: 100%;
+    margin-right: 20px;
+    height: 40px;
+    background-color: #F0F2EF;
+    border: 1px solid #828282;
+    font-size: 1em;
+}
+
+#household-population-chart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 255px;
+}
+
+#male-n-female-amount{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgb(136, 133, 133);
+    padding: 20px;
+}
+
+table{
+    margin-top: 25px;
+    width: 100%;
+    
+}
+
+table, td, thead, th{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 5px;
+}
