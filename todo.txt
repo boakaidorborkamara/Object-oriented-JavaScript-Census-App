@@ -1,6 +1,6 @@
 0.  [x] Make the layout
 
-1.  [] Get data
+1.  [x] Get data
         *fetch data from json
 
 2.  [] Show total poulation
